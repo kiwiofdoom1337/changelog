@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: Roboto, sans-serif;
+  padding: 50px 10px;
+  margin: 30px auto;
+  border: 2px solid black;
+  border-radius: 25px;
+  max-width: 700px;
+}
+
+.bigbox {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.title-changelog {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
+}
+
+.title-desc {
+  text-align: center;
+  color: gray;
+}
+
+.lists {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.lists-dates {
+  list-style: none;
+  text-align: center;
+  color: gray;
+  line-height: 4em;
+  padding-right: 20px;
+}
+
+.lists-desc {
+  line-height: 4em;
+  position: relative;
+  list-style: none;
+}
+.lists-desc::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 17px;
+  height: 500px;
+  width: 2px;
+  background-color: black;
+}
+.lists-desc li {
+  position: relative;
+}
+.lists-desc li::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.bottom-button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bottom-button:hover {
+  opacity: 0.8;
+}
+.bottom-button:active {
+  opacity: 0.6;
+}
+
+
